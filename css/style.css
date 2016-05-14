@@ -1,0 +1,308 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	color: #DDD;
+	font-size: 20px;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	color: #DDD;
+}
+
+a {
+	color: #2987BA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fd5c63;
+}
+
+body {
+	cursor: default;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding-top: 8%;
+	background: url("../img/wood1.png")
+}
+
+.container {
+	margin: auto;
+	width : 100%;
+	max-width: 800px;
+
+}
+
+.row:before, 
+.row:after {
+	content:"";
+	display: table;
+	clear:both;
+}
+
+.row {
+	height: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	height: 100%;
+	text-align: center; 
+	display:block;
+	position: relative;
+}
+
+.col-1 {
+	width: 100%;
+}
+
+.col-2 {
+	width: 50%;
+}
+
+.col-3 {
+	width: 33.33%;
+}
+
+.col-4 {
+	width: 25%;
+}
+
+.col-5 {
+	width: 66.66%;
+}
+
+@media all and (max-width:800px){
+	.col-1{ width: 100%; }
+	.col-2{ width: 100%; }
+	.col-3{ width: 100%; }
+	.col-4{ width: 100%; }
+	.col-5{ width: 100%; }
+
+}
+
+#img-title {
+	max-width: 100%;
+	height: auto;
+}
+
+#curr_month {
+	padding-left: 20px;
+	text-align: left;
+	line-height: 30px;
+	color: #BBB;
+	font-size: 14px;
+}
+
+.date_pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	position: relative;
+	margin: auto;
+	margin-bottom: 20px;
+    background-size: cover !important;
+    background-position: center !important;
+
+    -webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.date_pic:hover {
+	-webkit-transform: scale(1.10);
+	transform: scale(1.10);
+	cursor: pointer;
+}
+
+.text {
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 30px;
+	transform: translate(-50%, -50%);
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+#blind {
+	position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: 1;
+    display:none;
+}
+
+.overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
+    overflow: auto;
+    display:none;
+}
+
+#details {
+	background-color: #FFF;
+	margin: 5% auto;
+	width : 70%;
+	display:block;
+	overflow:auto;
+}
+
+#head_img {
+	height: 300px !important;
+	background-size: cover !important;
+	background-position: center !important; 
+}
+
+.food {
+	height: 200px;
+	width:200px;
+	background-size: cover !important;
+	background-position: center !important; 
+	margin: auto;
+	border: 20px solid #FFF;
+}
+
+#date {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	padding: 10px;
+	background: url('../site-img/black.png');
+	color: #FFF;
+	margin: 10px;
+	float: left;
+	font-size: 30px;
+}
+
+
+#left:hover, #right:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#left {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#right {
+	right: 0%;
+}
+
+#back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    margin: 20px;
+    line-height: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#content {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+
+.middle, .middle-side {
+	display: table;
+  	text-align: center;
+  	height: 150px;
+}
+
+.middle span, .middle-side span {
+	display: table-cell;
+  	vertical-align: middle;
+}
+
+
+label {
+	text-align: left;
+}
+
+input {
+	width: 100%;
+}
+
+#signup {
+	padding: 50px;
+}
+
+input[type="submit"] {
+	border-radius: 0px;
+	border: 1px solid #AAA;
+	background: white;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+input[type="submit"]:hover {
+	border: 1px solid #999;
+	background: #999;
+	color: #FFF;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-size: ;
+}
+
+.location {
+	text-align: center;
+	color: #DDD;
+	font-size: 14px;
+	padding: 20px;
+	background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+	line-height: 20px;
+	/*background:linear-gradient(rgba(256, 256, 256, 0.6),rgba(256, 256, 256, 0.6));*/
+}
+
+.location:hover {
+	background:linear-gradient(rgba(256, 256, 256, 0.4),rgba(256, 256, 256, 0.4));
+	cursor: pointer;
+}
+
+#img-state {
+	height: 20px;
+	width: auto;
+	margin-right: 5px;
+}
