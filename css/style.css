@@ -16,27 +16,12 @@ h3 {
 	color: #DDD;
 }
 
-a {
-	color: #2987BA;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #fd5c63;
-}
-
 body {
 	cursor: default;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	padding-top: 5%;
-	background: url("../img/wood1.png");
-}
-
-#parent-container {
-	position: absolute;
-	width:100%;
-	height:100%;
+	background: url("../img/wood.png");
 }
 
 .container {
@@ -108,7 +93,7 @@ body {
 	-ms-user-select: none;
 }
 
-#curr_month {
+#about {
 	padding-left: 20px;
 	text-align: left;
 	line-height: 30px;
@@ -116,7 +101,7 @@ body {
 	font-size: 14px;
 }
 
-.date_pic {
+.event-pic {
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
@@ -136,7 +121,7 @@ body {
 	transform: translateZ(0);
 }
 
-.date_pic:hover {
+.event-pic:hover {
 	-webkit-transform: scale(1.10);
 	transform: scale(1.10);
 	cursor: pointer;
@@ -212,16 +197,8 @@ body {
 	top: 0px;
 }
 
-.food {
-	height: 200px;
-	width:200px;
-	background-size: cover !important;
-	background-position: center !important; 
-	margin: auto;
-	border: 20px solid #FFF;
-}
 
-#date {
+.event-title {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	padding: 10px;
@@ -233,58 +210,12 @@ body {
 }
 
 
-#left:hover, #right:hover {
-	opacity: 1;
-	cursor: pointer;
-}
-
-#left {
-	-moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}
-
-#right {
-	right: 0%;
-}
-
-#back {
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-    margin: 20px;
-    line-height: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-
-
-.helper {
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
 #content {
 	font-size: 15px;
 	line-height: 30px;
 	padding: 20px;
 }
 
-
-.middle, .middle-side {
-	display: table;
-  	text-align: center;
-  	height: 150px;
-}
-
-.middle span, .middle-side span {
-	display: table-cell;
-  	vertical-align: middle;
-}
 
 .location {
 	text-align: center;

@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Cathy Chen</title>
+	<title>Food with Friends</title>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
@@ -18,7 +18,7 @@
 	<div class="overlay" id="supper-overlay">
 		<div id="details">
 			<div id="head_img" style="background: url('img/supper.png')">
-				<div id="date">SUPPER CLUB</div>
+				<div class="event-title">SUPPER CLUB</div>
 				<div class="close"></div>
 			</div>
 			<div id="content">
@@ -29,7 +29,7 @@
 	<div class="overlay" id="hors-overlay">
 		<div id="details">
 			<div id="head_img" style="background: url('img/hors.png')">
-				<div id="date">HORS D'OEUVRES</div>
+				<div class="event-title">HORS D'OEUVRES</div>
 				<div class="close"></div>
 			</div>
 			<div id="content">
@@ -41,7 +41,7 @@
 	<div class="overlay" id="bread-overlay">
 		<div id="details">
 			<div id="head_img" style="background: url('img/bread.png')">
-				<div id="date">BREAKING BREAD</div>
+				<div class="event-title">BREAKING BREAD</div>
 				<div class="close"></div>
 			</div>
 			<div id="content">
@@ -51,157 +51,154 @@
 		</div>
 	</div>
 
-	<div id="parent-container">
 
 		
-		<div class="container">
-			<div class="row">
-				<div class="col-2" id="title">
-					<img src="img/title1.png" id="img-title"/>
-				</div>
-				<div class="col-2" id="curr_month">
-					<h3>WHAT DO WE DO?</h3>
-					<p>We are creating spaces that bring people together and enjoy food. For each of our events, we’ll provide the food, and you just bring yourself. You’ll meet some new people you might not normally meet, and to enjoy some eats as well.</p>
-					<h3>WHY DO WE DO THIS?</h3>
-					<p>We are a group of friends who love bringing people together through food. Sitting down and sharing food is one of the most fundamental human acts. Yet, in a world where everyone is constantly going somewhere or doing something, it’s often hard to take the time to simply sit with people and enjoy some great food.</p>
-				</div>
-			</div> 
-			<!-- <hr> -->
-			<br>
-			<div class="row">
-				<div class="col-3">
-					<div class="date_pic" id="supper" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('img/supper.png');background-size: cover;">
-						<div class="text">Supper Club</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="date_pic" id="hors" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('img/hors.png');background-size: cover;">
-						<div class="text">Hors d'Oeuvres</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="date_pic" id="bread" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('img/bread.png');background-size: cover;">
-						<div class="text">Breaking Bread</div>
-					</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-2" id="title">
+				<img src="img/title1.png" id="img-title"/>
+			</div>
+			<div class="col-2" id="about">
+				<h3>WHAT DO WE DO?</h3>
+				<p>We are creating spaces that bring people together and enjoy food. For each of our events, we’ll provide the food, and you just bring yourself. You’ll meet some new people you might not normally meet, and to enjoy some eats as well.</p>
+				<h3>WHY DO WE DO THIS?</h3>
+				<p>We are a group of friends who love bringing people together through food. Sitting down and sharing food is one of the most fundamental human acts. Yet, in a world where everyone is constantly going somewhere or doing something, it’s often hard to take the time to simply sit with people and enjoy some great food.</p>
+			</div>
+		</div> 
+		<br>
+		<div class="row">
+			<div class="col-3">
+				<div class="event-pic" id="supper" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('img/supper.png');background-size: cover;">
+					<div class="text">Supper Club</div>
 				</div>
 			</div>
-			<hr>
-			<br>
-			<div class="row">
-				<h2>AVAILABLE LOCATIONS | SUMMER 2016</h2>
-				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
-					<img id="img-state" class="inactive-state" src="img/cali.png"/>San Francisco, CA
-					<hr>
-					<div class="location-info">TBA</div>
-				</div></a>
-				<a href="https://docs.google.com/forms/d/1eE6VFna17wImsPFwNfhTGvFi41B6_Z92136R3ilFcdY/viewform" target="_blank"><div class="col-4 location">
-					<img id="img-state" src="img/cali.png"/>South Bay, CA
-					<hr>
-					<div class="location-info">Sign up for Hors d'Oeuvres this week!</div>
-				</div></a>
-				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
-					<img id="img-state" class="inactive-state" src="img/nyc.png"/>New York, NY
-					<hr>
-					<div class="location-info">TBA</div>
-				</div></a>
-				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
-					<img id="img-state" class="inactive-state" src="img/penn.png"/>Philadelphia, PA
-					<hr>
-					<div class="location-info">TBA</div>
-				</div></a>
+			<div class="col-3">
+				<div class="event-pic" id="hors" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('img/hors.png');background-size: cover;">
+					<div class="text">Hors d'Oeuvres</div>
+				</div>
 			</div>
-			<br>
-			<hr>
-			<br>
-			<div class="row">
-				<h2>SIGN UP TO OUR LISTSERV TO GET NOTIFIED ABOUT NEW EVENTS!</h2>
+			<div class="col-3">
+				<div class="event-pic" id="bread" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('img/bread.png');background-size: cover;">
+					<div class="text">Breaking Bread</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<br>
+		<div class="row">
+			<h2>AVAILABLE LOCATIONS | SUMMER 2016</h2>
+			<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+				<img id="img-state" class="inactive-state" src="img/cali.png"/>San Francisco, CA
+				<hr>
+				<div class="location-info">TBA</div>
+			</div></a>
+			<a href="https://docs.google.com/forms/d/1eE6VFna17wImsPFwNfhTGvFi41B6_Z92136R3ilFcdY/viewform" target="_blank"><div class="col-4 location">
+				<img id="img-state" src="img/cali.png"/>South Bay, CA
+				<hr>
+				<div class="location-info">Sign up for Hors d'Oeuvres this week!</div>
+			</div></a>
+			<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+				<img id="img-state" class="inactive-state" src="img/nyc.png"/>New York, NY
+				<hr>
+				<div class="location-info">TBA</div>
+			</div></a>
+			<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+				<img id="img-state" class="inactive-state" src="img/penn.png"/>Philadelphia, PA
+				<hr>
+				<div class="location-info">TBA</div>
+			</div></a>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<div class="row">
+			<h2>SIGN UP TO OUR LISTSERV TO GET NOTIFIED ABOUT NEW EVENTS!</h2>
 
-				<form action="https://docs.google.com/forms/d/1Y2_7LuklQPl3sCJw8VUhuCKd8ax5S6nCTXq_a4E6Pmw/formResponse" method="POST" id="ss-form" target="_blank" onsubmit="">
-					<div role="list">
-						<div role="listitem" class="question">
-							<div dir="auto">
-								<div>
-									<label for="entry_460341648">
-										<div>
-											What&#39;s your email?
-											<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-										</div>
-										<div dir="auto">
-										</div>
-									</label>
-									<input type="text" name="entry.460341648" value="" id="entry_460341648" dir="auto" aria-label="What&#39;s your email?  " aria-required="true" required="" title="" placeholder="e.g. janedoe@gmail.com">
-									<div id="1978285146_errorMessage"></div>
-								</div>
-							</div>
-						</div>
-						<div role="listitem" class="question">
-							<div dir="auto">
-								<div>
-									<label for="entry_1516406192">
-										<div>
-											Where are you this summer? (select which cities)
-											<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>	
-										</div>
-										<div dir="auto">
-										</div>
-									</label>
-
-									<div role="group" aria-label="Where are you this summer? (select which cities )  " id="cities">
-										<div>
-											<label>
-												<span>
-													<input type="checkbox" name="entry.66950992" value="San Francisco (the city)" id="group_66950992_1" role="checkbox" aria-required="true">
-												</span>
-												<span>San Francisco (the city)</span>
-											</label>
-										</div>
-										<div>
-											<label>
-												<span>
-													<input type="checkbox" name="entry.66950992" value="South Bay" id="group_66950992_2" role="checkbox" ria-required="true">
-												</span>
-												<span>South Bay</span>
-											</label>
-										</div>
-										<div>
-											<label>
-												<span>
-													<input type="checkbox" name="entry.66950992" value="New York City" id="group_66950992_3" role="checkbox" aria-required="true">
-												</span>
-												<span>New York City</span>
-											</label>
-										</div>
-										<div>
-											<label>
-												<span>
-													<input type="checkbox" name="entry.66950992" value="Philadelphia" id="group_66950992_4" role="checkbox" aria-required="true">
-												</span>
-												<span>Philadelphia</span>
-											</label>
-										</div>
-										<div>
-											<label>
-												<span>
-													<input type="checkbox" name="entry.66950992" value="__other_option__" id="group_66950992_5" role="checkbox" aria-required="true">
-												</span>
-												<span>Other:</span>
-											</label>
-											<span>
-												<input type="text" name="entry.66950992.other_option_response" value="" id="other" dir="auto" aria-label="Other" placeholder="e.g. Boston">
-											</span>
-										</div>
+			<form action="https://docs.google.com/forms/d/1Y2_7LuklQPl3sCJw8VUhuCKd8ax5S6nCTXq_a4E6Pmw/formResponse" method="POST" id="ss-form" target="_blank" onsubmit="">
+				<div role="list">
+					<div role="listitem" class="question">
+						<div dir="auto">
+							<div>
+								<label for="entry_460341648">
+									<div>
+										What&#39;s your email?
+										<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
 									</div>
-									<div id="1516406192_errorMessage"></div>
-								</div>
+									<div dir="auto">
+									</div>
+								</label>
+								<input type="text" name="entry.460341648" value="" id="entry_460341648" dir="auto" aria-label="What&#39;s your email?  " aria-required="true" required="" title="" placeholder="e.g. janedoe@gmail.com">
+								<div id="1978285146_errorMessage"></div>
 							</div>
 						</div>
-						<input type="hidden" name="draftResponse" value="[,,&quot;-2911762637286471915&quot;]">
-						<input type="hidden" name="pageHistory" value="0">
-						<input type="hidden" name="fbzx" value="-2911762637286471915">
-						<input type="submit" name="submit" value="Submit" id="ss-submit">
 					</div>
-				</form>
-			</div>
+					<div role="listitem" class="question">
+						<div dir="auto">
+							<div>
+								<label for="entry_1516406192">
+									<div>
+										Where are you this summer? (select which cities)
+										<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>	
+									</div>
+									<div dir="auto">
+									</div>
+								</label>
+
+								<div role="group" aria-label="Where are you this summer? (select which cities )  " id="cities">
+									<div>
+										<label>
+											<span>
+												<input type="checkbox" name="entry.66950992" value="San Francisco (the city)" id="group_66950992_1" role="checkbox" aria-required="true">
+											</span>
+											<span>San Francisco (the city)</span>
+										</label>
+									</div>
+									<div>
+										<label>
+											<span>
+												<input type="checkbox" name="entry.66950992" value="South Bay" id="group_66950992_2" role="checkbox" ria-required="true">
+											</span>
+											<span>South Bay</span>
+										</label>
+									</div>
+									<div>
+										<label>
+											<span>
+												<input type="checkbox" name="entry.66950992" value="New York City" id="group_66950992_3" role="checkbox" aria-required="true">
+											</span>
+											<span>New York City</span>
+										</label>
+									</div>
+									<div>
+										<label>
+											<span>
+												<input type="checkbox" name="entry.66950992" value="Philadelphia" id="group_66950992_4" role="checkbox" aria-required="true">
+											</span>
+											<span>Philadelphia</span>
+										</label>
+									</div>
+									<div>
+										<label>
+											<span>
+												<input type="checkbox" name="entry.66950992" value="__other_option__" id="group_66950992_5" role="checkbox" aria-required="true">
+											</span>
+											<span>Other:</span>
+										</label>
+										<span>
+											<input type="text" name="entry.66950992.other_option_response" value="" id="other" dir="auto" aria-label="Other" placeholder="e.g. Boston">
+										</span>
+									</div>
+								</div>
+								<div id="1516406192_errorMessage"></div>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" name="draftResponse" value="[,,&quot;-2911762637286471915&quot;]">
+					<input type="hidden" name="pageHistory" value="0">
+					<input type="hidden" name="fbzx" value="-2911762637286471915">
+					<input type="submit" name="submit" value="Submit" id="ss-submit">
+				</div>
+			</form>
 		</div>
 	</div>
 
@@ -258,8 +255,21 @@ $(document).ready(function() {
 
 	$('.inactive-click').click(false);
 
+	$(document).keyup(function(e) {
+	  if (e.keyCode === 27) {
+	  	$("#supper-overlay").hide();
+		$("#hors-overlay").hide();
+		$("#bread-overlay").hide();
+		$("#blind").hide();
+
+		$("body").removeClass("noscroll");
+	  	
+	  }
+	});
 
 });
+
+
 </script>
 
 </html>
