@@ -90,23 +90,32 @@
 			<br>
 			<div class="row">
 				<h2>AVAILABLE LOCATIONS | SUMMER 2016</h2>
-				<a href=""><div class="col-4 location">
-					<img id="img-state" src="img/cali.png"/>San Francisco, CA
+				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+					<img id="img-state" class="inactive-state" src="img/cali.png"/>San Francisco, CA
+					<hr>
+					<div class="location-info">TBA</div>
 				</div></a>
-				<a href=""><div class="col-4 location">
+				<a href="https://docs.google.com/forms/d/1eE6VFna17wImsPFwNfhTGvFi41B6_Z92136R3ilFcdY/viewform" target="_blank"><div class="col-4 location">
 					<img id="img-state" src="img/cali.png"/>South Bay, CA
+					<hr>
+					<div class="location-info">Sign up for Hors d'Oeuvres this week!</div>
 				</div></a>
-				<a href=""><div class="col-4 location">
-					<img id="img-state" src="img/nyc.png"/>New York, NY
+				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+					<img id="img-state" class="inactive-state" src="img/nyc.png"/>New York, NY
+					<hr>
+					<div class="location-info">TBA</div>
 				</div></a>
-				<a href=""><div class="col-4 location">
-					<img id="img-state" src="img/penn.png"/>Philadelphia, PA
+				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+					<img id="img-state" class="inactive-state" src="img/penn.png"/>Philadelphia, PA
+					<hr>
+					<div class="location-info">TBA</div>
 				</div></a>
 			</div>
+			<br>
 			<hr>
 			<br>
 			<div class="row">
-				<a href="https://docs.google.com/forms/d/1Y2_7LuklQPl3sCJw8VUhuCKd8ax5S6nCTXq_a4E6Pmw/viewform" target="_blank"><h2>SIGN UP TO OUR LISTSERV TO GET NOTIFIED ABOUT NEW EVENTS!</h2></a>
+				<h2>SIGN UP TO OUR LISTSERV TO GET NOTIFIED ABOUT NEW EVENTS!</h2>
 
 				<form action="https://docs.google.com/forms/d/1Y2_7LuklQPl3sCJw8VUhuCKd8ax5S6nCTXq_a4E6Pmw/formResponse" method="POST" id="ss-form" target="_blank" onsubmit="">
 					<div role="list">
@@ -247,6 +256,8 @@ $(document).ready(function() {
 
 		$("body").removeClass("noscroll");
 	})
+
+	$('.inactive-click').click(false);
 
 
 });
