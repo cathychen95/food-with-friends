@@ -30,14 +30,19 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	padding-top: 8%;
-	background: url("../img/wood1.png")
+	background: url("../img/wood1.png");
+}
+
+#parent-container {
+	position: absolute;
+	width:100%;
+	height:100%;
 }
 
 .container {
 	margin: auto;
 	width : 100%;
 	max-width: 800px;
-
 }
 
 .row:before, 
@@ -88,6 +93,7 @@ body {
 	.col-3{ width: 100%; }
 	.col-4{ width: 100%; }
 	.col-5{ width: 100%; }
+	#details { width: 80%;}
 
 }
 
@@ -145,13 +151,13 @@ body {
 }
 
 #blind {
-	position: fixed; 
+	position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.8;
+    opacity: 0.5;
     z-index: 1;
     display:none;
 }
@@ -180,6 +186,20 @@ body {
 	height: 300px !important;
 	background-size: cover !important;
 	background-position: center !important; 
+	position: relative;
+}
+
+.close {
+	background: url('../img/close.png');
+	background-size: cover;
+	height: 30px;
+	width: 30px;
+	margin: 10px;
+	opacity: 0.7;
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	top: 0px;
 }
 
 .food {
@@ -195,7 +215,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	padding: 10px;
-	background: url('../site-img/black.png');
+	background: url('../img/black.png');
 	color: #FFF;
 	margin: 10px;
 	float: left;
@@ -241,6 +261,7 @@ body {
 #content {
 	font-size: 15px;
 	line-height: 30px;
+	padding: 20px;
 }
 
 
@@ -253,37 +274,6 @@ body {
 .middle span, .middle-side span {
 	display: table-cell;
   	vertical-align: middle;
-}
-
-
-label {
-	text-align: left;
-}
-
-input {
-	width: 100%;
-}
-
-#signup {
-	padding: 50px;
-}
-
-input[type="submit"] {
-	border-radius: 0px;
-	border: 1px solid #AAA;
-	background: white;
-	color: #000;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-}
-
-input[type="submit"]:hover {
-	border: 1px solid #999;
-	background: #999;
-	color: #FFF;
-	cursor: pointer;
-	font-family: 'Roboto', sans-serif;
-	font-size: ;
 }
 
 .location {
@@ -305,4 +295,67 @@ input[type="submit"]:hover {
 	height: 20px;
 	width: auto;
 	margin-right: 5px;
+}
+
+form {
+	color: #CCC;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	margin: auto;
+	/*padding-left: 50px;*/
+	/*padding-right: 50px;*/
+	width: 70%;
+	padding-bottom: 70px;
+}
+
+.question {
+	margin-bottom: 10px;
+}
+
+
+label {
+	text-align: left;
+}
+
+input {
+	width: 100%;
+	background:linear-gradient(rgba(256, 256, 256, 0.2),rgba(256, 256, 256, 0.2));
+	color: #FFF;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	padding: 5px;
+
+}
+
+input[type="checkbox"] {
+	width: auto;
+}
+
+input[type="submit"] {
+	/*background: white;*/
+	color: #FFF;
+	background:linear-gradient(rgba(256, 256, 256, 0.4),rgba(256, 256, 256, 0.4));
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	height: 40px;
+}
+
+input[type="submit"]:hover {
+	background:linear-gradient(rgba(256, 256, 256, 0.6),rgba(256, 256, 256, 0.6));
+	color: #FFF;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+
+#cities {
+	font-size: 11px;
+}
+
+#other {
+	width: 80%;
+	float: right;
+	padding: 2px;
 }
