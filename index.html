@@ -13,17 +13,16 @@
 <body>
 
 	<!-- OVERLAY -->
-	
+	<div id="blind"></div>
+
 	<div class="overlay" id="supper-overlay">
-		<div class="row">
-			<div id="details">
-				<div id="head_img" style="background: url('img/supper.png')">
-					<div id="date">SUPPER CLUB</div>
-					<div class="close"></div>
-				</div>
-				<div id="content">
-					<p>We want to bring back the supper club. At supper club, we’ll craft a 3-course menu and gather 6-7 people to share it. It’s intimate, and quite frankly, may be a bit awkward in the beginning, but by the end you’ll be laughing and talking as if you’d always been friends.</p>
-				</div>
+		<div id="details">
+			<div id="head_img" style="background: url('img/supper.png')">
+				<div id="date">SUPPER CLUB</div>
+				<div class="close"></div>
+			</div>
+			<div id="content">
+				<p>We want to bring back the supper club. At supper club, we’ll craft a 3-course menu and gather 6-7 people to share it. It’s intimate, and quite frankly, may be a bit awkward in the beginning, but by the end you’ll be laughing and talking as if you’d always been friends.</p>
 			</div>
 		</div>
 	</div>
@@ -54,7 +53,7 @@
 
 	<div id="parent-container">
 
-		<!-- <div id="blind"></div> -->
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-2" id="title">
@@ -90,42 +89,35 @@
 			<br>
 			<div class="row">
 				<h2>AVAILABLE LOCATIONS | SUMMER 2016</h2>
-				<a href=""><div class="col-4 location">
-					<img id="img-state" src="img/cali.png"/>San Francisco, CA
+				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+					<img id="img-state" class="inactive-state" src="img/cali.png"/>San Francisco, CA
+					<hr>
+					<div class="location-info">TBA</div>
 				</div></a>
-				<a href=""><div class="col-4 location">
+				<a href="https://docs.google.com/forms/d/1eE6VFna17wImsPFwNfhTGvFi41B6_Z92136R3ilFcdY/viewform" target="_blank"><div class="col-4 location">
 					<img id="img-state" src="img/cali.png"/>South Bay, CA
+					<hr>
+					<div class="location-info">Sign up for Hors d'Oeuvres this week!</div>
 				</div></a>
-				<a href=""><div class="col-4 location">
-					<img id="img-state" src="img/nyc.png"/>New York, NY
+				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+					<img id="img-state" class="inactive-state" src="img/nyc.png"/>New York, NY
+					<hr>
+					<div class="location-info">TBA</div>
 				</div></a>
-				<a href=""><div class="col-4 location">
-					<img id="img-state" src="img/penn.png"/>Philadelphia, PA
+				<a href="" target="_blank"><div class="col-4 location inactive-click" id="inactive">
+					<img id="img-state" class="inactive-state" src="img/penn.png"/>Philadelphia, PA
+					<hr>
+					<div class="location-info">TBA</div>
 				</div></a>
 			</div>
+			<br>
 			<hr>
 			<br>
 			<div class="row">
-				<a href="https://docs.google.com/forms/d/1Y2_7LuklQPl3sCJw8VUhuCKd8ax5S6nCTXq_a4E6Pmw/viewform" target="_blank"><h2>SIGN UP TO OUR LISTSERV TO GET NOTIFIED ABOUT NEW EVENTS!</h2></a>
+				<h2>SIGN UP TO OUR LISTSERV TO GET NOTIFIED ABOUT NEW EVENTS!</h2>
 
 				<form action="https://docs.google.com/forms/d/1Y2_7LuklQPl3sCJw8VUhuCKd8ax5S6nCTXq_a4E6Pmw/formResponse" method="POST" id="ss-form" target="_blank" onsubmit="">
 					<div role="list">
-						<div role="listitem" class="question">
-							<div dir="auto">
-								<div>
-									<label for="entry_2061988162">
-										<div>
-											What&#39;s your name?
-											<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-										</div>
-										<div dir="auto">
-										</div>
-									</label>
-									<input type="text" name="entry.2061988162" value="" id="entry_2061988162" dir="auto" aria-label="What&#39;s your name?  " aria-required="true" required="" title="">
-									<div id="528810679_errorMessage"></div>
-								</div>
-							</div>
-						</div>
 						<div role="listitem" class="question">
 							<div dir="auto">
 								<div>
@@ -137,7 +129,7 @@
 										<div dir="auto">
 										</div>
 									</label>
-									<input type="text" name="entry.460341648" value="" id="entry_460341648" dir="auto" aria-label="What&#39;s your email?  " aria-required="true" required="" title="">
+									<input type="text" name="entry.460341648" value="" id="entry_460341648" dir="auto" aria-label="What&#39;s your email?  " aria-required="true" required="" title="" placeholder="e.g. janedoe@gmail.com">
 									<div id="1978285146_errorMessage"></div>
 								</div>
 							</div>
@@ -195,7 +187,7 @@
 												<span>Other:</span>
 											</label>
 											<span>
-												<input type="text" name="entry.66950992.other_option_response" value="" id="other" dir="auto" aria-label="Other">
+												<input type="text" name="entry.66950992.other_option_response" value="" id="other" dir="auto" aria-label="Other" placeholder="e.g. Boston">
 											</span>
 										</div>
 									</div>
@@ -222,16 +214,22 @@ $(document).ready(function() {
 	$("#supper").click(function() {
 		$("#supper-overlay").show();
 		$("#blind").show();
+
+		$("body").addClass("noscroll");
 		return false;
 	})
 	$("#hors").click(function() {
 		$("#hors-overlay").show();
 		$("#blind").show();
+
+		$("body").addClass("noscroll");
 		return false;
 	})
 	$("#bread").click(function() {
 		$("#bread-overlay").show();
 		$("#blind").show();
+
+		$("body").addClass("noscroll");
 		return false;
 	})
 	
@@ -239,6 +237,8 @@ $(document).ready(function() {
 		$("#supper-overlay").hide();
 		$("#hors-overlay").hide();
 		$("#bread-overlay").hide();
+
+		$("body").removeClass("noscroll");
 		$("#blind").hide();
 	})
 
@@ -252,7 +252,11 @@ $(document).ready(function() {
 		$("#hors-overlay").hide();
 		$("#bread-overlay").hide();
 		$("#blind").hide();
+
+		$("body").removeClass("noscroll");
 	})
+
+	$('.inactive-click').click(false);
 
 
 });
