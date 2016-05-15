@@ -6,14 +6,14 @@
 
 h2 {
 	font-family: 'Oswald', sans-serif;
-	color: #DDD;
+	color: #383838;
 	font-size: 20px;
 	text-align: center;
 }
 
 h3 {
 	font-family: 'Oswald', sans-serif;
-	color: #DDD;
+	color: #383838;
 }
 
 a {
@@ -30,7 +30,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	padding-top: 8%;
-	background: url("../img/wood1.png");
+	background: url("../img/wood2.png");
 }
 
 #parent-container {
@@ -106,7 +106,7 @@ body {
 	padding-left: 20px;
 	text-align: left;
 	line-height: 30px;
-	color: #BBB;
+	color: #444;
 	font-size: 14px;
 }
 
@@ -278,17 +278,19 @@ body {
 
 .location {
 	text-align: center;
-	color: #DDD;
+	color: #000;
 	font-size: 14px;
 	padding: 20px;
-	background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+	background:linear-gradient(rgba(256, 256, 256, 0.4),rgba(256, 256, 256, 0.4));
 	line-height: 20px;
 	/*background:linear-gradient(rgba(256, 256, 256, 0.6),rgba(256, 256, 256, 0.6));*/
 }
 
 .location:hover {
-	background:linear-gradient(rgba(256, 256, 256, 0.4),rgba(256, 256, 256, 0.4));
+	
+	background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
 	cursor: pointer;
+	color: #FFF;
 }
 
 #img-state {
@@ -298,7 +300,7 @@ body {
 }
 
 form {
-	color: #CCC;
+	color: #444;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	margin: auto;
@@ -319,7 +321,7 @@ label {
 
 input {
 	width: 100%;
-	background:linear-gradient(rgba(256, 256, 256, 0.2),rgba(256, 256, 256, 0.2));
+	background:linear-gradient(rgba(256, 256, 256, 0.6),rgba(256, 256, 256, 0.6));
 	color: #FFF;
 	border: 0;
 	font-family: 'Roboto', sans-serif;
@@ -335,8 +337,8 @@ input[type="checkbox"] {
 
 input[type="submit"] {
 	/*background: white;*/
-	color: #FFF;
-	background:linear-gradient(rgba(256, 256, 256, 0.4),rgba(256, 256, 256, 0.4));
+	color: #000;
+	background:linear-gradient(rgba(256, 256, 256, 0.8),rgba(256, 256, 256, 0.8));
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	width: 100%;
@@ -344,8 +346,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background:linear-gradient(rgba(256, 256, 256, 0.6),rgba(256, 256, 256, 0.6));
-	color: #FFF;
+	background:linear-gradient(rgba(256, 256, 256, 1),rgba(256, 256, 256, 1));
+	color: #000;
 	cursor: pointer;
 	font-family: 'Roboto', sans-serif;
 }
