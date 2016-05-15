@@ -29,7 +29,7 @@ body {
 	cursor: default;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	padding-top: 8%;
+	padding-top: 5%;
 	background: url("../img/wood1.png");
 }
 
@@ -42,7 +42,7 @@ body {
 .container {
 	margin: auto;
 	width : 100%;
-	max-width: 800px;
+	max-width: 900px;
 }
 
 .row:before, 
@@ -100,6 +100,12 @@ body {
 #img-title {
 	max-width: 100%;
 	height: auto;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 #curr_month {
@@ -151,13 +157,13 @@ body {
 }
 
 #blind {
-	position: absolute; 
+	position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.8;
     z-index: 1;
     display:none;
 }
@@ -170,13 +176,17 @@ body {
     height: 100%;
     opacity: 1;
     z-index: 2;
-    overflow: auto;
+    overflow-y: scroll;
     display:none;
+}
+
+.noscroll {
+	overflow: hidden;
 }
 
 #details {
 	background-color: #FFF;
-	margin: 5% auto;
+	margin: 8% auto;
 	width : 70%;
 	display:block;
 	overflow:auto;
@@ -334,7 +344,6 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-	/*background: white;*/
 	color: #FFF;
 	background:linear-gradient(rgba(256, 256, 256, 0.4),rgba(256, 256, 256, 0.4));
 	font-family: 'Roboto', sans-serif;

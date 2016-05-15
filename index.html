@@ -13,7 +13,7 @@
 <body>
 
 	<!-- OVERLAY -->
-	
+	<div id="blind"></div>
 	<div class="overlay" id="supper-overlay">
 		<div class="row">
 			<div id="details">
@@ -54,7 +54,7 @@
 
 	<div id="parent-container">
 
-		<!-- <div id="blind"></div> -->
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-2" id="title">
@@ -121,7 +121,7 @@
 										<div dir="auto">
 										</div>
 									</label>
-									<input type="text" name="entry.2061988162" value="" id="entry_2061988162" dir="auto" aria-label="What&#39;s your name?  " aria-required="true" required="" title="">
+									<input type="text" name="entry.2061988162" value="" id="entry_2061988162" dir="auto" aria-label="What&#39;s your name?  " aria-required="true" required="" title="" placeholder="e.g. Jane Doe">
 									<div id="528810679_errorMessage"></div>
 								</div>
 							</div>
@@ -137,7 +137,7 @@
 										<div dir="auto">
 										</div>
 									</label>
-									<input type="text" name="entry.460341648" value="" id="entry_460341648" dir="auto" aria-label="What&#39;s your email?  " aria-required="true" required="" title="">
+									<input type="text" name="entry.460341648" value="" id="entry_460341648" dir="auto" aria-label="What&#39;s your email?  " aria-required="true" required="" title="" placeholder="e.g. janedoe@gmail.com">
 									<div id="1978285146_errorMessage"></div>
 								</div>
 							</div>
@@ -195,7 +195,7 @@
 												<span>Other:</span>
 											</label>
 											<span>
-												<input type="text" name="entry.66950992.other_option_response" value="" id="other" dir="auto" aria-label="Other">
+												<input type="text" name="entry.66950992.other_option_response" value="" id="other" dir="auto" aria-label="Other" placeholder="e.g. Boston">
 											</span>
 										</div>
 									</div>
@@ -222,16 +222,22 @@ $(document).ready(function() {
 	$("#supper").click(function() {
 		$("#supper-overlay").show();
 		$("#blind").show();
+
+		$("body").addClass("noscroll");
 		return false;
 	})
 	$("#hors").click(function() {
 		$("#hors-overlay").show();
 		$("#blind").show();
+
+		$("body").addClass("noscroll");
 		return false;
 	})
 	$("#bread").click(function() {
 		$("#bread-overlay").show();
 		$("#blind").show();
+
+		$("body").addClass("noscroll");
 		return false;
 	})
 	
@@ -239,6 +245,8 @@ $(document).ready(function() {
 		$("#supper-overlay").hide();
 		$("#hors-overlay").hide();
 		$("#bread-overlay").hide();
+
+		$("body").removeClass("noscroll");
 		$("#blind").hide();
 	})
 
@@ -252,6 +260,8 @@ $(document).ready(function() {
 		$("#hors-overlay").hide();
 		$("#bread-overlay").hide();
 		$("#blind").hide();
+
+		$("body").removeClass("noscroll");
 	})
 
 
