@@ -14,6 +14,8 @@ h2 {
 h3 {
 	font-family: 'Oswald', sans-serif;
 	color: #DDD;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 body {
@@ -65,7 +67,7 @@ body {
 }
 
 .col-4 {
-	width: 25%;
+	width: 24%;
 }
 
 .col-5 {
@@ -79,6 +81,17 @@ body {
 	.col-4{ width: 100%; }
 	.col-5{ width: 100%; }
 	#details { width: 80%;}
+
+}
+
+#sign-up-link {
+	text-decoration: underline;
+	font-weight: bold;
+	color: white;
+}
+
+#sign-up-link:hover {
+	cursor: pointer;
 
 }
 
@@ -99,6 +112,10 @@ body {
 	line-height: 30px;
 	color: #BBB;
 	font-size: 14px;
+}
+
+.about-p {
+	margin-top: 0;
 }
 
 .event-pic {
@@ -216,6 +233,26 @@ body {
 	padding: 20px;
 }
 
+.button {
+	font-size: 18px;
+	background-color: black;
+	border-width: 1px;
+	border-color: black;
+	border-style: normal;
+	height: 50px;
+	width: 150px;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.button:hover {
+	cursor: pointer;
+	opacity: .7;
+}
 
 .location {
 	text-align: center;
@@ -224,12 +261,17 @@ body {
 	padding: 20px;
 	background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
 	line-height: 20px;
+	height: 140px;
+	border: 1px solid white;
+	margin-right: .5%;
+	margin-left: .5%;
 	/*background:linear-gradient(rgba(256, 256, 256, 0.6),rgba(256, 256, 256, 0.6));*/
 }
 
 #inactive {
 	color: #555;
 	cursor: not-allowed;
+	border: 1px solid gray;
 }
 
 .inactive-state {
@@ -246,7 +288,7 @@ body {
 }
 
 .location-info {
-	font-size: 10px;
+	font-size: 12px;
 	font-style: italic;
 }
 
@@ -316,4 +358,13 @@ input[type="submit"]:hover {
 	width: 80%;
 	float: right;
 	padding: 2px;
+}
+
+.footer {
+	color: white;
+	text-align: center;
+}
+
+.footer > a {
+	color: white;
 }
